@@ -1,4 +1,7 @@
 package ArrayNums;
+
+import java.util.Arrays;
+
 /*
  * 加一
  * 感觉和我做的比较起来，其实也就那样。。。。
@@ -22,14 +25,8 @@ public class Easy7Better {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] digits= {2,2,9,9};
-		for(int i=0;i<digits.length;i++) {
-			System.out.print(digits[i]);
-		}
-		System.out.println();
+		System.out.println(Arrays.toString(digits));
 		int[] res=plusOne(digits);
-		for(int r:res) {
-			System.out.print(r);
-		}
-		System.out.println();
+		System.out.println(Arrays.toString(res));
 	}
 }

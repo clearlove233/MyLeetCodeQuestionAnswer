@@ -1,4 +1,7 @@
 package ArrayNums;
+
+import java.util.Arrays;
+
 /*
  * 题目：加一
  * 优点：执行速度快
@@ -36,15 +39,9 @@ public class Easy7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] digits= {2,2,9,9};
-		for(int i=0;i<digits.length;i++) {
-			System.out.print(digits[i]);
-		}
-		System.out.println();
+		System.out.println(Arrays.toString(digits));
 		int[] res=plusOne(digits);
-		for(int r:res) {
-			System.out.print(r);
-		}
-		System.out.println();
+		System.out.println(Arrays.toString(res));
 	}
 
 }
