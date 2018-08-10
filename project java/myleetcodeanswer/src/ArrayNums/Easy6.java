@@ -1,6 +1,10 @@
 package ArrayNums;
-
+/*
+ * 给定两个数组，写一个方法来计算他们的交集
+ * 排序知乎比较，注意二层循环的break，防止死循环
+ */
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Easy6 {
 	
@@ -33,6 +37,8 @@ public class Easy6 {
 					   break;
 				   }
 			   }
+			   if(j==nums2.length)
+				   break;
 		   }
 		   int[] res1=new int[k];
 		   for(int m=0;m<k;m++) {
@@ -43,12 +49,11 @@ public class Easy6 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums1= {1,2,2,1,3,3,2,1,2,2};
-		int[] nums2= {2,2,3,4,5};
+		int[] nums1= {1,2};
+		int[] nums2= {1,1};
 		int[] res=intersect(nums1, nums2);
-		for(int r:res) {
-			System.out.print(r+" ");
-		}
-		System.out.println();
+		System.out.println(Arrays.toString(nums1));
+		System.out.println(Arrays.toString(nums2));
+		System.out.println(Arrays.toString(res));
 	}
 }
