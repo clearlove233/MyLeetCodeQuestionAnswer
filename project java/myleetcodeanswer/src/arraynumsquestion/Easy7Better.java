@@ -1,4 +1,4 @@
-package ArrayNums;
+package arraynumsquestion;
 
 import java.util.Arrays;
 

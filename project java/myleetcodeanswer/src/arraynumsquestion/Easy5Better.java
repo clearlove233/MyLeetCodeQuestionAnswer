@@ -1,4 +1,4 @@
-package ArrayNums;
+package arraynumsquestion;
 /*
  * 位运算
  * 异或运算中，任何一个数字和他自己本身异或都是0，

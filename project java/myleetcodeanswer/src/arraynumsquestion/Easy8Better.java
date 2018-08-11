@@ -1,4 +1,4 @@
-package ArrayNums;
+package arraynumsquestion;
 /*
  * 移动零
  * 逆向思维，将非零元素按序写入数组，剩余元素用零补齐，时间复杂度o(n);

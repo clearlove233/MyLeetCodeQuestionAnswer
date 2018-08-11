@@ -1,4 +1,4 @@
-package ArrayNums;
+package arraynumsquestion;
 /*
  * 暴力解法 
  *对数组进行排序。 

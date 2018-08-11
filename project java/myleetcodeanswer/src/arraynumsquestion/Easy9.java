@@ -1,4 +1,4 @@
-package ArrayNums;
+package arraynumsquestion;
 /*
  * 两数之和
  * 暴力解法，时间复杂度o(n^2);

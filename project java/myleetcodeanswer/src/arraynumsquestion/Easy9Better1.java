@@ -1,4 +1,4 @@
-package ArrayNums;
+package arraynumsquestion;
 /*
  * 两数之和
  * 优秀的解法，o(n)

@@ -1,10 +1,8 @@
-package ArrayNums;
+package arraynumsquestion;
 /*
  * 给定两个数组，写一个方法来计算他们的交集
- * 排序知乎比较，注意二层循环的break，防止死循环
  */
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class Easy6 {
 	
@@ -23,28 +21,24 @@ public class Easy6 {
 	public static int[] sortA(int[] nums1,int[] nums2) {
 		int i=0,j=0,k=0;
 		int[] res=new int[nums1.length];
-		while(i<nums1.length) {
-			   while(j<nums2.length) {
-				   if(nums1[i]>nums2[j]) {
-					   j++;
-				   }else if(nums1[i]==nums2[j]) {
-					   res[k++]=nums1[i];
-					   i++;
-					   j++;
-					   break;
-				   }else {
-					   i++;
-					   break;
-				   }
-			   }
-			   if(j==nums2.length)
-				   break;
+		while(i<nums1.length&&j<nums2.length) {//注意这里写一个循环就好了
+		   if(nums1[i]>nums2[j]) {
+			   j++;
+		   }else if(nums1[i]==nums2[j]) {
+			   res[k++]=nums1[i];
+			   i++;
+			   j++;
+			   break;
+		   }else {
+			   i++;
+			   break;
 		   }
-		   int[] res1=new int[k];
-		   for(int m=0;m<k;m++) {
-			   res1[m]=res[m];
-		   }
-		   return res1;
+	   }
+	   int[] res1=new int[k];
+	   for(int m=0;m<k;m++) {
+		   res1[m]=res[m];
+	   }
+	   return res1;
 	}
 	
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ArrayNums;
+package arraynumsquestion;
 /*
  *移动零
  *判断数组元素是否为0，为0就将元素前移

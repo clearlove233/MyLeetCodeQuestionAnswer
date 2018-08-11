@@ -1,4 +1,4 @@
-package ArrayNums;
+package arraynumsquestion;
 
 public class Easy2 {
 	public static int maxProfit(int[] prices) {
