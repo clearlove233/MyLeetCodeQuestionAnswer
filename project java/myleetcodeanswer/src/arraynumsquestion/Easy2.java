@@ -1,5 +1,7 @@
 package arraynumsquestion;
-
+/*
+ * 买卖股票的最佳时机二
+ */
 public class Easy2 {
 	public static int maxProfit(int[] prices) {
 		int max=0;
